@@ -48,7 +48,7 @@ class Auth extends Component {
             <div className="auth-page">
                 <div className="Auth">
                     <div className="auth-container">
-                        <h1>Welcome!</h1>
+                        <h1>Welcome!  If you'd like to try browsing as an online user with an accompanying Dota account.  Please feel free to use Username: 'a' Password: 'a'. </h1>
                         <div className="two-input">
                             <input 
                                 placeholder="Username" 
