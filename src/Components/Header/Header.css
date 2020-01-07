@@ -14,7 +14,7 @@
 .middle-items {
     display: flex;
     justify-content: space-between;
-    min-width: 550px;
+    min-width: 250px;
 }
 
 li {

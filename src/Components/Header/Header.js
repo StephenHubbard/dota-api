@@ -39,12 +39,6 @@ const Header = props => {
                 <Link className="link" to="/leaderboard">
                     <li>Leaderboard</li>
                 </Link>
-                <Link className="link" to="/records">
-                    <li>Records</li>
-                </Link>
-                <Link className="link" to="/achievements">
-                    <li>Achievements</li>
-                </Link>
             </div>
                 <LoggedInUser 
                     logout={logout}
