@@ -25,12 +25,28 @@ export default class Dashboard extends Component {
                 users: res.data
             })
         })
+        
     }
+
+    // componentDidUpdate() {
+    //     console.log(this.state.users)
+    //         let users = this.state.users.map(function(el, i) {
+    //             console.log(el)
+    //         })
+    // }
 
     
     
 
     render() {
+        let users = this.state.users.map(function(el, i) {
+            return (
+                <User
+                    userObj={el}
+                    key={i}
+                />
+            )
+        })
         let key = 0;
         return (
             <div className="dashboard">
@@ -43,11 +59,7 @@ export default class Dashboard extends Component {
 
                     {this.state.users ? (
                     <div className="dashboard-cont">
-                        {this.state.users.map(el => (
-                            <User 
-                            userObj={el} key={key++}
-                            />
-                        ))}
+                        {users}
                     </div>
                     ) : null }     
                 </div>
